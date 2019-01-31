@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewTrack"
+                style="@style/poster"/>
+
+            <TextView
+                android:id="@+id/textViewTrack"
+                android:text="Thank U, Next"
+                android:layout_toRightOf="@id/imageViewTrack"
+                android:layout_toEndOf="@id/imageViewTrack"
+                style="@style/TextContent.Title"/>
+
+            <TextView
+                android:id="@+id/textViewArtist"
+                android:layout_toRightOf="@id/imageViewTrack"
+                android:text="Ariana Grande"
+                android:layout_below="@id/textViewTrack"
+                android:layout_toEndOf="@id/imageViewTrack"
+                style="@style/TextContent.SubDesc" />
+
+            <TextView
+                android:id="@+id/textViewListener"
+                android:layout_toRightOf="@id/imageViewTrack"
+                android:layout_below="@id/textViewArtist"
+                android:text="Listeners : "
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewListeners"
+                android:layout_toRightOf="@id/textViewListener"
+                android:layout_below="@id/textViewArtist"
+                android:text="500 k"
+                android:textStyle="bold"
+                style="@style/TextContent" />
+
+            <LinearLayout
+                android:layout_below="@+id/textViewListeners"
+                android:layout_toRightOf="@id/imageViewTrack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/buttonDetail"
+                    android:text="Detail"
+                    style="@style/ButtonGeneral" />
+                <Button
+                    android:id="@+id/buttonShare"
+                    android:text="Share"
+                    style="@style/ButtonGeneral" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView2"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewArtistTop"
+                style="@style/poster"/>
+
+            <TextView
+                android:id="@+id/textViewArtistTop"
+                android:text="Ariana Grande"
+                android:layout_toRightOf="@id/imageViewArtistTop"
+                android:layout_toEndOf="@id/imageViewArtistTop"
+                style="@style/TextContent.Title"/>
+
+            <TextView
+                android:id="@+id/textViewPlaycountt"
+                android:layout_toRightOf="@id/imageViewArtistTop"
+                android:text="PlayCount :  "
+                android:layout_below="@id/textViewArtistTop"
+                style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewPlaycountTopArtist"
+                android:layout_toRightOf="@id/textViewPlaycountt"
+                android:text="500k"
+                android:layout_below="@id/textViewArtistTop"
+                android:textStyle="bold"
+
+                style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewListener"
+                android:layout_toRightOf="@id/imageViewArtistTop"
+                android:layout_below="@id/textViewPlaycountTopArtist"
+                android:text="Listeners   : "
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewListenersTopArtist"
+                android:layout_toRightOf="@id/textViewListener"
+                android:layout_below="@id/textViewPlaycountTopArtist"
+                android:text=" 500 k"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                style="@style/TextContent" />
+
+            <LinearLayout
+                android:layout_below="@+id/textViewListenersTopArtist"
+                android:layout_toRightOf="@id/imageViewArtistTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/buttonProfil"
+                    android:text="@string/profil"
+                    style="@style/ButtonGeneral" />
+                <Button
+                    android:id="@+id/buttonShare"
+                    android:text="SHARE"
+                    style="@style/ButtonGeneral" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

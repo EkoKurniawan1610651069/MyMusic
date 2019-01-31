@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kurniawan.mymusic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/itachi_chibi"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/itachi_chibi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".top_album.DetailAlbum"></activity>
+        <activity android:name=".top_album.TopAlbumActivity" />
+        <activity android:name=".SearchDetailActivity" />
+        <activity android:name=".CariLaguActivity" />
+        <activity android:name=".library.library.LibraryDetailActivity" />
+        <activity android:name=".library.library.LibraryActivity" />
+        <activity android:name=".top_artist.ProfilActivity" />
+        <activity android:name=".top_artist.TopArtistActivity" />
+        <activity android:name=".top_track.TopTrackActivity" />
+        <activity android:name=".top_track.MusicDetailActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

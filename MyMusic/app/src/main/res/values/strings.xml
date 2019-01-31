@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MyMusic</string>
+    <string name="nav_header_subtitle">mymusic.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail">Detail Profil</string>
+    <string name="share">Bagikan</string>
+    <string name="toptrack">Top Track Music</string>
+    <string name="profil">Profil</string>
+    <string name="libraryartist">Library</string>
+    <string name="search">Cari Lagu</string>
+    <string name="search_lagu">Cari Lagu</string>
+</resources>

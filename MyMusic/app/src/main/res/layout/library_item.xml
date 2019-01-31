@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageViewArtist"
+        android:adjustViewBounds="true"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        android:layout_width="160dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:id="@+id/textViewNamaArtist"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewArtist"
+        android:textAlignment="center"
+        android:text="Ariana Grande"
+        android:layout_margin="5dp"
+        android:textSize="13dp"
+        android:textStyle="bold"
+
+        android:textColor="#fff"
+        android:background="#7000"/>
+</RelativeLayout>

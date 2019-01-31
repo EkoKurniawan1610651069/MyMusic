@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView5">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewAlbum"
+                style="@style/poster"/>
+
+            <TextView
+                android:id="@+id/textViewJudulAlbum"
+                android:text="Judul Album"
+                android:layout_toRightOf="@id/imageViewAlbum"
+                android:layout_toEndOf="@id/imageViewAlbum"
+                style="@style/TextContent.Title"/>
+
+            <TextView
+                android:id="@+id/textViewArtistAlbum"
+                android:layout_toRightOf="@id/imageViewAlbum"
+                android:text="Ariana Grande"
+                android:layout_below="@id/textViewJudulAlbum"
+                style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewPlayCount"
+                android:layout_toRightOf="@id/imageViewAlbum"
+                android:layout_below="@id/textViewArtistAlbum"
+                android:text="Rank: "
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewPlayCountAlbum"
+                android:layout_toRightOf="@id/textViewPlayCount"
+                android:layout_below="@id/textViewArtistAlbum"
+                android:text="500 k"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                style="@style/TextContent" />
+
+            <LinearLayout
+                android:layout_below="@+id/textViewPlayCount"
+                android:layout_toRightOf="@id/imageViewAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/buttonDetail"
+                    android:text="Detail"
+                    style="@style/ButtonGeneral" />
+                <Button
+                    android:id="@+id/buttonShare"
+                    android:text="SHARE"
+                    style="@style/ButtonGeneral" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
